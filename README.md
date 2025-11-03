@@ -62,19 +62,6 @@ Open in browser
 Open index.html directly or use Live Server (VS Code extension)
 
 
-API Call Setup
-
-If using mock data:
-Update the API endpoint in script.js
-
-fetch('./data/sample.json')
-
-
-If using a live API:
-Replace it with your real endpoint:
-
-fetch('https://api.example.com/data')
-
 🧠 Features
 
 ✅ Fully responsive UI built from Adobe XD design
