@@ -1,0 +1,52 @@
+:root{
+  --bg: #f5f7fb;
+  --card: #fff;
+  --muted: #6b7280;
+  --accent: #2563eb;
+  --sidebar: #0f172a;
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background:var(--bg);
+  color:#0b1220;
+}
+
+/* layout */
+.app{
+  display:flex;
+  min-height:100vh;
+}
+
+/* sidebar */
+.sidebar{
+  width:220px;
+  padding:28px;
+  background:linear-gradient(180deg,var(--sidebar), #0b1220);
+  color:#fff;
+}
+.brand{margin:0 0 12px 0;font-size:18px}
+.sidebar nav ul{list-style:none;padding:0;margin:20px 0 0 0}
+.sidebar li{padding:8px 0;opacity:0.95}
+
+/* main */
+.main{flex:1;padding:24px;display:flex;flex-direction:column;gap:18px}
+.header{display:flex;justify-content:space-between;align-items:center}
+.patient-summary{display:flex;gap:12px;align-items:center}
+.patient-summary img{width:72px;height:72px;border-radius:8px;object-fit:cover;background:#eee}
+.patient-summary h1{margin:0;font-size:20px}
+.header-actions button{padding:8px 12px;border:0;background:var(--accent);color:white;border-radius:6px;cursor:pointer}
+
+/* cards */
+.card{background:var(--card);padding:18px;border-radius:10px;box-shadow:0 6px 18px rgba(11,17,32,0.06)}
+.card h3{margin:0 0 12px 0;color:var(--muted)}
+
+.details ul{list-style:none;padding:0;margin:0}
+.details li{padding:6px 0;border-bottom:1px solid #f1f5f9;color:var(--muted)}
+
+@media (max-width:800px){
+  .sidebar{display:none}
+  .patient-summary img{width:56px;height:56px}
+}

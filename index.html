@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Patient — Jessica Taylor</title>
+
+  <!-- Chart.js CDN (you may include a local copy if you prefer) -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <h2 class="brand">Coalition — Patient</h2>
+      <nav>
+        <ul>
+          <li class="active">Overview</li>
+          <li>Records</li>
+          <li>Vitals</li>
+          <li>Settings</li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="main">
+      <header class="header">
+        <div class="patient-summary">
+          <img id="patient-avatar" alt="patient photo" />
+          <div>
+            <h1 id="patient-name">Jessica Taylor</h1>
+            <p id="patient-meta">Age • Gender • ID</p>
+          </div>
+        </div>
+
+        <div class="header-actions">
+          <button id="refresh-btn">Refresh</button>
+        </div>
+      </header>
+
+      <section class="card">
+        <h3>Blood Pressure (Yearly)</h3>
+        <canvas id="bpChart" width="800" height="300"></canvas>
+      </section>
+
+      <section class="card details">
+        <h3>Patient Details</h3>
+        <ul id="patient-details">
+          <!-- filled by script -->
+        </ul>
+      </section>
+
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
