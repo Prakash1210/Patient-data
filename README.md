@@ -53,8 +53,8 @@ project/
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/xd-to-html-api.git
-   cd xd-to-html-api
+   git clone https://github.com/Prakash1210/Patient-data.git 
+   cd patient-data
 
 
 Open in browser
